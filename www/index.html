@@ -24,6 +24,8 @@
   <![endif]-->
   <script src='lib/mapbox.js/latest/mapbox.js'></script>
   <script src='lib/raven.min.js'></script>
+  
+  
   <meta http-equiv="Content-Security-Policy" content="
     default-src
       'self'
@@ -108,5 +110,10 @@ if (/a\.tiles\.mapbox\.com/.test(L.mapbox.config.HTTP_URL)) {
   })();
 }
 </script>
+
+<script src="shiny/jquery.min.js"></script>
+<script src="shiny/shiny.min.js"></script>
+<script src='shiny/shiny_change_watcher.js'></script>
+
 </body>
 </html>
