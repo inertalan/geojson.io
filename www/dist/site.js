@@ -27428,7 +27428,8 @@ module.exports = function fileBar(context) {
                     }
                 }
             ]
-        }];
+        
+        }, {title: 'Save to R', action:function(){}}];
 
         if (mapboxAPI || githubAPI) {
             actions.unshift({

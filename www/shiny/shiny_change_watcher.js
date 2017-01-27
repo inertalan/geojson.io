@@ -7,5 +7,14 @@ $(document).on(
         Shiny.onInputChange('geojsonio_change', chg.obj.map)
       }
     )
+    $('a')
+      .filter(function(index) {
+        return $(this).text() === " Save to R";
+      })
+      .on('click', function() {
+        Shiny.onInputChange('geojsonio_quit', true)
+      });
   }
 )
+
+
