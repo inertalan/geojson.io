@@ -120,7 +120,8 @@ module.exports = function fileBar(context) {
                     }
                 }
             ]
-        }];
+        
+        }, {title: 'Quit to R', action:function(){}}];
 
         if (mapboxAPI || githubAPI) {
             actions.unshift({
